@@ -1,0 +1,23 @@
+{
+  "name": "soeasy-ui",
+  "version": "1.0.0",
+  "description": "这是一个ui框架",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yangjie111111111111111/soeasy-ui.git"
+  },
+  "keywords": [
+    "vue2.0",
+    "ui"
+  ],
+  "author": "yangjie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yangjie111111111111111/soeasy-ui/issues"
+  },
+  "homepage": "https://github.com/yangjie111111111111111/soeasy-ui#readme"
+}
