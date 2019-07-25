@@ -7,7 +7,7 @@
 
 // export default Component
 
-import Component from './src';
+import Component from './src/button.vue';
 
 
 

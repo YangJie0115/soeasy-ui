@@ -3,7 +3,8 @@
 import Vue from 'vue'
 import App from './App'
 import Button from '../packages/button'
-
+import  "../src/assets/css/index.css"
+import  "../src/icon.css"
 Vue.config.productionTip = false
 // Vue.component("s-button", Button)
 
@@ -17,6 +18,9 @@ const install = function(Vue) {
     Vue.use(component)
   })
 }
+
+
+
 
 install(Vue)
 // if (typeof window !== 'undefined' && window.Vue) {
