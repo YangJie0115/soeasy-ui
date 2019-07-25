@@ -41,11 +41,11 @@ module.exports = {
         loader: 'babel-loader',
         include: [resolve('src'), resolve('test'), resolve('node_modules/webpack-dev-server/client')]
       },
-      // {
-      //   test:/\.md$/,
-      //   loader:'vue-markdown-loader',
-      //   options:vueMarkdown,
-      // },
+      {
+        test:/\.md$/,
+        loader:'vue-markdown-loader',
+        // options:vueMarkdown,
+      },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
         loader: 'url-loader',

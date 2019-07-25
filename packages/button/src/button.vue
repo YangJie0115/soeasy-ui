@@ -13,7 +13,7 @@
         @click="handleClick"
     >
         <slot></slot>
-        <img src="/src/assets/img/pullDown.png" alt="">
+        <i class="icon-chazhao iconfont"></i>
     </button>
 </template>
 
