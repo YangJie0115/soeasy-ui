@@ -46,6 +46,19 @@ module.exports = {
         loader:'vue-markdown-loader',
         // options:vueMarkdown,
       },
+      // {
+      //   test: /\.md$/,
+      //   use: [
+      //     {
+      //       loader: "html-loader"
+      //     },
+      //     {
+      //       loader: "markdown-loader",
+      //       options: {
+      //       }
+      //     }
+      //   ]
+      // },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
         loader: 'url-loader',

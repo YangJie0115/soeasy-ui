@@ -12,7 +12,13 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "vue": "^2.5.2"
+    "html-loader": "^0.5.5",
+    "markdown-loader": "^5.0.0",
+    "mavon-editor": "^2.7.5",
+    "showdown": "^1.9.0",
+    "text-loader": "^0.0.1",
+    "vue": "^2.5.2",
+    "vue-markdown": "^2.2.4"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

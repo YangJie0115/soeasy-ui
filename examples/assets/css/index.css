@@ -362,3 +362,18 @@ a,img{
     border:1px solid #FF6A6A;
     color:#fff;
 }
+
+
+/* markDownCss */
+.hljs-name{
+    color:#22863a
+}
+.hljs-attr{
+    color:#6f42c1
+}
+.hljs-keyword{
+    color:red
+}   
+.hljs-string{
+    color:#032f62
+}

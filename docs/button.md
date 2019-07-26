@@ -2,11 +2,18 @@
 
 #### 自定义颜色
 
-```html 
+```html  Python
 <i-button color="steelblue">自定义颜色</i-button>
 <i-button color="whitesmoke" text-color="rosybrown" round>自定义颜色</i-button>
 <i-button color="thistle" dashed circle><i-icon name="heart-o" /></i-button>
 ```
+
+```javascript
+var s = "JavaScript syntax highlighting";
+alert(s);
+```
+
+>yangjieda
 
 #### 按钮尺寸
 

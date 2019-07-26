@@ -4,11 +4,11 @@
     <div class="s-mains">
       <s-leftAside></s-leftAside>
       <div id="someComponents">
-        <aaa></aaa>
+        <!-- <aaa></aaa> -->
+        <div class="markdown-body" ><aaa></aaa></div>
         <ccc></ccc>
         <bbb></bbb>
       </div>
-      
     </div>
   </div>
 </template>
@@ -24,7 +24,16 @@ export default {
   name: 'App',
   components: {
     sHeaders,bbb,ccc,sLeftAside,aaa
-  }
+  },
+  data(){
+    return{
+      markdownOption: {
+        bold: true, // 粗体
+      },
+      // msc:aaa
+    }
+  },
+  
 }
 </script>
 
@@ -49,8 +58,9 @@ export default {
   /* top:70px; */
   width: 100%;
   padding-top:100px;
-  padding-left:200px;
+  padding-left:240px;
   /* height: calc(100% - 70px); */
   /* overflow-y: auto; */
+  text-align: left
 }
 </style>

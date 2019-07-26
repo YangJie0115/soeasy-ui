@@ -6,14 +6,15 @@ import Button from '../packages/button'
 import Icon from '../packages/icon'
 import  "./assets/css/index.css"
 import  "./icon.css"
+import 'github-markdown-css';
+
 Vue.config.productionTip = false
 // Vue.component("s-button", Button)
 
 const components = [
   Button,
-  Icon
+  Icon,
 ]
-// Vue.use(Button)
 
 const install = function(Vue) {
   components.forEach(component => {
@@ -30,7 +31,7 @@ install(Vue)
 // }
 
 export {
-  Button
+  Button,Icon
 }
 
 export default {
