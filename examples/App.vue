@@ -4,12 +4,8 @@
     <div class="s-mains">
       <s-leftAside></s-leftAside>
       <div id="someComponents">
+        <aaa></aaa>
         <ccc></ccc>
-        <bbb></bbb>
-        <bbb></bbb>
-        <bbb></bbb>
-        <bbb></bbb>
-        <bbb></bbb>
         <bbb></bbb>
       </div>
       
@@ -20,13 +16,14 @@
 <script>
 import sHeaders from './components/s-headers'
 import sLeftAside from './components/s-leftAside'
+import aaa from '../docs/button.md'
 import bbb from '../packages/button/demo/button'
 import ccc from '../packages/icon/demo/icon'
 
 export default {
   name: 'App',
   components: {
-    sHeaders,bbb,ccc,sLeftAside
+    sHeaders,bbb,ccc,sLeftAside,aaa
   }
 }
 </script>
