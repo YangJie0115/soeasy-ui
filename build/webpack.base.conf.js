@@ -13,7 +13,7 @@ function resolve (dir) {
 module.exports = {
   context: path.resolve(__dirname, '../'),
   entry: {
-    app: './src/index.js'
+    app: './examples/index.js'
   },
   output: {
     path: config.build.assetsRoot,
@@ -26,7 +26,7 @@ module.exports = {
     extensions: ['.js', '.vue', '.json'],
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
-      '@': resolve('src'),
+      '@': resolve('examples'),
     }
   },
   module: {
@@ -39,7 +39,7 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'babel-loader',
-        include: [resolve('src'), resolve('test'), resolve('node_modules/webpack-dev-server/client')]
+        include: [resolve('examples'), resolve('test'), resolve('node_modules/webpack-dev-server/client')]
       },
       {
         test:/\.md$/,

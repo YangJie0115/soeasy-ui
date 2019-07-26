@@ -32,7 +32,7 @@ html {
     /* // min-width: 1200px; */
 }
 body{
-	background: #F6F7F9;
+	background: #fff;
 	color:#17233D ;
     font-size: 14px;
     box-sizing: border-box !important; 
@@ -68,6 +68,113 @@ a,img{
     text-overflow:ellipsis;
     white-space:nowrap;
 }
+/* // 对齐 */
+.s-mains{
+    width: 1300px;
+    margin:0 auto;
+    height: 100%;
+    position: relative
+}
+.algCenter{
+    text-align: center
+}
+.algRight{
+    text-align: right
+}
+.algLeft{
+    text-align: left
+}
+
+.ml10{
+    margin-left:10px
+}
+.ml20{
+    margin-left:20px;
+}
+.mt10{
+    margin-top:10px
+}
+.mt20{
+    margin-top:20px;
+}
+.mb10{
+    margin-bottom:10px
+}
+.mb20{
+    margin-bottom:20px;
+}
+.mr10{
+    margin-right:10px
+}
+.mr20{
+    margin-right:20px;
+}
+
+.f10{
+    font-size: 10px;
+}
+.f12{
+    font-size: 12px;
+}
+.f14{
+    font-size: 14px;
+}
+.f16{
+    font-size: 16px;
+}
+.f18{
+    font-size: 18px;
+}
+.f20{
+    font-size: 20px;
+}
+.f22{
+    font-size: 22px;
+}
+.f24{
+    font-size: 24px;
+}
+.f26{
+    font-size: 26px;
+}
+.f28{
+    font-size: 28px;
+}
+.f30{
+    font-size: 30px;
+}
+.cur{
+    cursor: pointer;
+}
+
+/* //-webkit 内核浏览器 兼容 滚动条样式 */
+::-webkit-scrollbar {
+    width: 14px;
+    height: 14px;
+  }
+  
+  ::-webkit-scrollbar-track,
+  ::-webkit-scrollbar-thumb {
+    border-radius: 999px;
+    border: 5px solid transparent;
+  }
+  
+  ::-webkit-scrollbar-track {
+      /*滚动条的外层轨道*/
+    box-shadow: 1px 1px 5px rgba(0,0,0,.2) inset;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    min-height: 20px;
+    background-clip: content-box;
+    box-shadow:0 0 5px rgba(0,0,0,.2) inset;
+    background-color: rgba(165,181,194,.5);
+    border-radius: 3px;
+  }
+  
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
 
 .s-button{
     background: #fff;

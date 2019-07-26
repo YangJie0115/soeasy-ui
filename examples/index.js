@@ -4,8 +4,8 @@ import Vue from 'vue'
 import App from './App'
 import Button from '../packages/button'
 import Icon from '../packages/icon'
-import  "../src/assets/css/index.css"
-import  "../src/icon.css"
+import  "./assets/css/index.css"
+import  "./icon.css"
 Vue.config.productionTip = false
 // Vue.component("s-button", Button)
 
