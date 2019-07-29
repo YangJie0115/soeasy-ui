@@ -2,12 +2,9 @@
   <div id="app">
     <s-headers></s-headers>
     <div class="s-mains">
-      <s-leftAside></s-leftAside>
+      <s-leftAside ></s-leftAside>
       <div id="someComponents">
-        <!-- <aaa></aaa> -->
-        <div class="markdown-body" ><aaa></aaa></div>
-        <ccc></ccc>
-        <bbb></bbb>
+        <router-view/>
       </div>
     </div>
   </div>
@@ -16,14 +13,11 @@
 <script>
 import sHeaders from './components/s-headers'
 import sLeftAside from './components/s-leftAside'
-import aaa from '../docs/button.md'
-import bbb from '../packages/button/demo/button'
-import ccc from '../packages/icon/demo/icon'
 
 export default {
   name: 'App',
   components: {
-    sHeaders,bbb,ccc,sLeftAside,aaa
+    sHeaders,sLeftAside
   },
   data(){
     return{
@@ -33,6 +27,8 @@ export default {
       // msc:aaa
     }
   },
+  methods:{
+  }
   
 }
 </script>

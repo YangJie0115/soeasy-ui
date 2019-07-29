@@ -12,8 +12,9 @@
         :disabled="isDisable"
         @click="handleClick"
     >
+        <i class="iconfont" :class="icon" v-if="left"></i>
         <slot></slot>
-        <i class="icon-chazhao iconfont"></i>
+        <i class="iconfont" :class="icon"  v-if="!left"></i>
     </button>
 </template>
 
@@ -31,13 +32,17 @@ export default {
                 return ['none','none',"none"]
             }
         },
-        src: {
+        icon: {
             type: String,
             default:""
         },
         disabled:Boolean,
         fillet:Boolean,
-        hollow:Boolean
+        hollow:Boolean,
+        left: {
+            type: Boolean,
+            default:false
+        },
     },
     computed:{
         colorBox(){
@@ -55,7 +60,8 @@ export default {
         },
         isHollow(){
             return this.hollow
-        }
+        },
+        
     },
     methods: {
       handleClick(evt) {

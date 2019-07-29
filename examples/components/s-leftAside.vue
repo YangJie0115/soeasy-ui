@@ -9,29 +9,29 @@
 
       <ul>
           <li class=" f20 s-tit">基本组件</li>
-          <li class="f14">icon 图标</li>
-          <li class="f14">button 按钮</li>
-          <li class="f14">input 输入框</li>
-          <li class="f14">radio 单选框</li>
-          <li class="f14">Checkbox 多选框</li>
-          <li class="f14">Select 选择器</li>
-          <li class="f14">Cascader 级联选择器</li>
-          <li class="f14">TimePicker 时间选择器</li>
-          <li class="f14">DatePicker 日期选择器</li>
-          <li class="f14">DateTimePicker 日期时间选择器</li>
-          <li class="f14">Rate 评分</li>
-          <li class="f14">TTable 表格</li>
-          <li class="f14">Tag 标签</li>
-          <li class="f14">Pagination 分页</li>
-          <li class="f14">Badge 标记</li>
-          <li class="f14">Message 消息提示</li>
-          <li class="f14">MessageBox 弹框</li>
-          <li class="f14">NavMenu 导航菜单</li>
-          <li class="f14">Breadcrumb 面包屑</li>
-          <li class="f14">Dropdown 下拉菜单</li>
-          <li class="f14">Carousel 走马灯</li>
-          <li class="f14">Collapse 折叠面板</li>
-          <li class="f14">Upload 上传</li>
+          <li class="f14" :class="{isActive:curPath=='icon'}" @click="chooseLeft('icon')">icon 图标</li>
+          <li class="f14" :class="{isActive:curPath=='button'}" @click="chooseLeft('button')">button 按钮</li>
+          <li class="f14" :class="{isActive:curPath=='input'}" @click="chooseLeft('input')">input 输入框</li>
+          <li class="f14" :class="{isActive:curPath=='radio'}" @click="chooseLeft('radio')">radio 单选框</li>
+          <li class="f14" :class="{isActive:curPath=='Checkbox'}" @click="chooseLeft('Checkbox')">Checkbox 多选框</li>
+          <li class="f14" :class="{isActive:curPath=='Select'}" @click="chooseLeft('Select')">Select 选择器</li>
+          <li class="f14" :class="{isActive:curPath=='Cascader'}" @click="chooseLeft('Cascader')">Cascader 级联选择器</li>
+          <li class="f14" :class="{isActive:curPath=='TimePicker'}" @click="chooseLeft('TimePicker')">TimePicker 时间选择器</li>
+          <li class="f14" :class="{isActive:curPath=='DatePicker'}" @click="chooseLeft('DatePicker')">DatePicker 日期选择器</li>
+          <li class="f14" :class="{isActive:curPath=='DateTimePicker'}" @click="chooseLeft('DateTimePicker')">DateTimePicker 日期时间选择器</li>
+          <li class="f14" :class="{isActive:curPath=='Rate'}" @click="chooseLeft('Rate')">Rate 评分</li>
+          <li class="f14" :class="{isActive:curPath=='TTable'}" @click="chooseLeft('TTable')">TTable 表格</li>
+          <li class="f14" :class="{isActive:curPath=='Tag'}" @click="chooseLeft('Tag')">Tag 标签</li>
+          <li class="f14" :class="{isActive:curPath=='Pagination'}" @click="chooseLeft('Pagination')">Pagination 分页</li>
+          <li class="f14" :class="{isActive:curPath=='Badge'}" @click="chooseLeft('Badge')">Badge 标记</li>
+          <li class="f14" :class="{isActive:curPath=='Message'}" @click="chooseLeft('Message')">Message 消息提示</li>
+          <li class="f14" :class="{isActive:curPath=='MessageBox'}" @click="chooseLeft('MessageBox')">MessageBox 弹框</li>
+          <li class="f14" :class="{isActive:curPath=='NavMenu'}" @click="chooseLeft('NavMenu')">NavMenu 导航菜单</li>
+          <li class="f14" :class="{isActive:curPath=='Breadcrumb'}" @click="chooseLeft('Breadcrumb')">Breadcrumb 面包屑</li>
+          <li class="f14" :class="{isActive:curPath=='Dropdown'}" @click="chooseLeft('Dropdown')">Dropdown 下拉菜单</li>
+          <li class="f14" :class="{isActive:curPath=='Carousel'}" @click="chooseLeft('Carousel')">Carousel 走马灯</li>
+          <li class="f14" :class="{isActive:curPath=='Collapse'}" @click="chooseLeft('Collapse')">Collapse 折叠面板</li>
+          <li class="f14" :class="{isActive:curPath=='Upload'}" @click="chooseLeft('Upload')">Upload 上传</li>
       </ul>
 
       
@@ -40,8 +40,31 @@
 </template>
 <script>
 export default {
+  data(){
+    return{
+      curPath:"icon",
+    }
+  },
   components: {
     
+  },
+  methods:{
+    chooseLeft(n){
+      this.curPath=n;
+      let str="/"+n;
+      this.$router.push(str)
+    }
+  },
+  created(){
+    let path=this.$route.path.split("/")[1]
+    this.curPath=path;
+  },
+  watch:{
+    $route(to,from){
+       let path=this.$route.path.split("/")[1]
+      let path1=from.path.split("/")[0];
+      this.curPath=path;
+    }
   }
 }
 </script>
@@ -65,6 +88,9 @@ export default {
   text-align: left
 }
 #s-leftAside li:hover{
+  color:#008DFF
+}
+#s-leftAside .isActive{
   color:#008DFF
 }
 #s-leftAside .s-tit:hover{
