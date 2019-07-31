@@ -5,6 +5,7 @@ import App from './App'
 import router from './router'
 import Button from '../packages/button'
 import Icon from '../packages/icon'
+import Input from '../packages/input'
 import  "./assets/css/index.css"
 import  "./icon.css"
 import 'github-markdown-css';
@@ -15,6 +16,7 @@ Vue.config.productionTip = false
 const components = [
   Button,
   Icon,
+  Input,
 ]
 
 const install = function(Vue) {
@@ -32,7 +34,9 @@ install(Vue)
 // }
 
 export {
-  Button,Icon
+  Button,
+  Icon,
+  Input,
 }
 
 export default {

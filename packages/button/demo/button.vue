@@ -1,7 +1,7 @@
 <template>
   <div class="demo-button">
-    <p class=" f30 mb20">1.图标库示例</p>
-    <p class="mb10">提供了一套常用的图标集合。</p>
+    <p class=" f30 mb20">1.按钮示例</p>
+    <p class="mb10">提供了一套常用的按钮集合。</p>
     <s-button  >默认按钮</s-button>
     <s-button type="primary" >主要按钮</s-button>
     <s-button type="success" >成功按钮</s-button>

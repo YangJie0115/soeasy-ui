@@ -62,7 +62,7 @@ left来控制图标的显示位置
 
 | 属性     | 类型| 参数说明  | 参数   |  默认值  |
 | -------- | -----:| -----:  |-----:  | :----:  |
-| type     |  string|按钮得类型|primary，success，info，warning，danger   |   “”     |
+| type     |  String|按钮得类型|primary，success，info，warning，danger   |   “”     |
 | fillet   |   Boolean|是否是半圆得边 |  true,false   |   false   |
 | hollow |  Boolean  |空心  |  true,false | false |
 | disabled |  Boolean  |禁用  |  true,false | false |

@@ -19,6 +19,10 @@ export const router =new Router({
           path: '/button',
           component:resolve =>require(['../packages/button/demo/button.vue'],resolve),
         },
+        {
+          path: '/input',
+          component:resolve =>require(['../packages/input/demo/input.vue'],resolve),
+        },
         // 账号信息
         // {
         //   path:'/account',
