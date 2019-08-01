@@ -2,7 +2,7 @@
     <div id="icon">
         <p class=" f30 mb20">1.输入框示例</p>
         <p class="mb10"><strong>大小不一的input</strong> </p>
-        <s-input type="text"   width="100" height="30" placeholder="请输入111">输入框</s-input>
+        <s-input type="text"   width="100" height="30" placeholder="请输入111" v-model="value">输入框</s-input>
         <s-input type="number"   width="200" height="40" placeholder="请输入111">输入框</s-input>
         <s-input type="password"   width="300" height="30" placeholder="请输入111">输入框</s-input>
         <p class="mb10 mt10"><strong>禁用 可读 </strong></p>

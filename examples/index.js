@@ -6,6 +6,7 @@ import router from './router'
 import Button from '../packages/button'
 import Icon from '../packages/icon'
 import Input from '../packages/input'
+import Textarea from '../packages/textarea'
 import  "./assets/css/index.css"
 import  "./icon.css"
 import 'github-markdown-css';
@@ -17,6 +18,7 @@ const components = [
   Button,
   Icon,
   Input,
+  Textarea,
 ]
 
 const install = function(Vue) {
@@ -37,6 +39,7 @@ export {
   Button,
   Icon,
   Input,
+  Textarea,
 }
 
 export default {

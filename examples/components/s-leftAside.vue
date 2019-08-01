@@ -12,6 +12,7 @@
           <li class="f14" :class="{isActive:curPath=='icon'}" @click="chooseLeft('icon')">icon 图标</li>
           <li class="f14" :class="{isActive:curPath=='button'}" @click="chooseLeft('button')">button 按钮</li>
           <li class="f14" :class="{isActive:curPath=='input'}" @click="chooseLeft('input')">input 输入框</li>
+          <li class="f14" :class="{isActive:curPath=='textarea'}" @click="chooseLeft('textarea')">textarea 输入框</li>
           <li class="f14" :class="{isActive:curPath=='radio'}" @click="chooseLeft('radio')">radio 单选框</li>
           <li class="f14" :class="{isActive:curPath=='Checkbox'}" @click="chooseLeft('Checkbox')">Checkbox 多选框</li>
           <li class="f14" :class="{isActive:curPath=='Select'}" @click="chooseLeft('Select')">Select 选择器</li>

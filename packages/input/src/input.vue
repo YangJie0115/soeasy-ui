@@ -17,6 +17,9 @@
             :placeholder="placeholder"
             :readonly="isReadonly"
             :maxlength="maxlength"
+            @compositionstart="handleComposition"
+            @compositionupdate="handleComposition"
+            @compositionend="handleComposition"
             >
             <s-icon class="s-left-i-rt" :class="iconrt" v-if="iconrt!=''"></s-icon>
         </div>
@@ -29,6 +32,7 @@ export default {
     data(){
         return {
             curValue:this.value===undefined||this.value===null?"":this.value,
+            isTrue:false,
         }
     },
     props:{
@@ -81,8 +85,17 @@ export default {
       }
     },
     methods:{
+        handleComposition(event){
+            if(event.type==='compositionend'){
+                this.isTrue=false;
+                this.input(event)
+            }else{
+                this.isTrue=true;
+            }
+        },
         input(){
             this.curValue=event.target.value;
+            if(this.isTrue) return ;
             this.$emit('input',event.target.value);
         },
         handleFocus(){

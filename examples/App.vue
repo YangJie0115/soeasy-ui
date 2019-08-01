@@ -28,7 +28,16 @@ export default {
     }
   },
   methods:{
-  }
+  },
+  watch: {
+    $route: {
+        handler: function(val, oldVal){
+          document.getElementById('app').scrollTo(0,0);
+      },
+      // 深度观察监听
+      deep: true
+    }
+  },
   
 }
 </script>

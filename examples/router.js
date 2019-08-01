@@ -23,6 +23,10 @@ export const router =new Router({
           path: '/input',
           component:resolve =>require(['../packages/input/demo/input.vue'],resolve),
         },
+        {
+          path: '/textarea',
+          component:resolve =>require(['../packages/textarea/demo/textarea.vue'],resolve),
+        },
         // 账号信息
         // {
         //   path:'/account',
