@@ -14,13 +14,13 @@
           <li class="f14" :class="{isActive:curPath=='input'}" @click="chooseLeft('input')">input 输入框</li>
           <li class="f14" :class="{isActive:curPath=='textarea'}" @click="chooseLeft('textarea')">textarea 输入框</li>
           <li class="f14" :class="{isActive:curPath=='radio'}" @click="chooseLeft('radio')">radio 单选框</li>
-          <li class="f14" :class="{isActive:curPath=='Checkbox'}" @click="chooseLeft('Checkbox')">Checkbox 多选框</li>
-          <li class="f14" :class="{isActive:curPath=='Select'}" @click="chooseLeft('Select')">Select 选择器</li>
-          <li class="f14" :class="{isActive:curPath=='Cascader'}" @click="chooseLeft('Cascader')">Cascader 级联选择器</li>
-          <li class="f14" :class="{isActive:curPath=='TimePicker'}" @click="chooseLeft('TimePicker')">TimePicker 时间选择器</li>
-          <li class="f14" :class="{isActive:curPath=='DatePicker'}" @click="chooseLeft('DatePicker')">DatePicker 日期选择器</li>
-          <li class="f14" :class="{isActive:curPath=='DateTimePicker'}" @click="chooseLeft('DateTimePicker')">DateTimePicker 日期时间选择器</li>
-          <li class="f14" :class="{isActive:curPath=='Rate'}" @click="chooseLeft('Rate')">Rate 评分</li>
+          <li class="f14" :class="{isActive:curPath=='Checkbox'}" @click="chooseLeft('checkbox')">Checkbox 多选框</li>
+          <li class="f14" :class="{isActive:curPath=='Select'}" @click="chooseLeft('select')">Select 选择器</li>
+          <li class="f14" :class="{isActive:curPath=='Cascader'}" @click="chooseLeft('cascader')">Cascader 级联选择器</li>
+          <li class="f14" :class="{isActive:curPath=='TimePicker'}" @click="chooseLeft('timePicker')">TimePicker 时间选择器</li>
+          <li class="f14" :class="{isActive:curPath=='DatePicker'}" @click="chooseLeft('datePicker')">DatePicker 日期选择器</li>
+          <li class="f14" :class="{isActive:curPath=='DateTimePicker'}" @click="chooseLeft('dateTimePicker')">DateTimePicker 日期时间选择器</li>
+          <li class="f14" :class="{isActive:curPath=='Rate'}" @click="chooseLeft('rate')">Rate 评分</li>
           <li class="f14" :class="{isActive:curPath=='TTable'}" @click="chooseLeft('TTable')">TTable 表格</li>
           <li class="f14" :class="{isActive:curPath=='Tag'}" @click="chooseLeft('Tag')">Tag 标签</li>
           <li class="f14" :class="{isActive:curPath=='Pagination'}" @click="chooseLeft('Pagination')">Pagination 分页</li>

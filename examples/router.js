@@ -27,6 +27,14 @@ export const router =new Router({
           path: '/textarea',
           component:resolve =>require(['../packages/textarea/demo/textarea.vue'],resolve),
         },
+        {
+          path: '/radio',
+          component:resolve =>require(['../packages/radio/demo/radio.vue'],resolve),
+        },
+        {
+          path: '/checkbox',
+          component:resolve =>require(['../packages/checkbox/demo/checkbox.vue'],resolve),
+        },
         // 账号信息
         // {
         //   path:'/account',

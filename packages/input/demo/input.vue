@@ -12,8 +12,7 @@
         <s-input type="text"   iconlt="icon-chazhao">图标左</s-input>
         <s-input type="text" iconrt="icon-chazhao">图标右</s-input>
         <p class="mb10 mt10"><strong>长度</strong> </p>
-        <s-input type="text"  width="250" height="30" placeholder="限制长度" maxlength="3">输入框</s-input>
-        {{value}}
+        <s-input type="text" v-model="value"  width="250" height="30" placeholder="限制长度" maxlength="3">输入框</s-input>
         <p class=" f30 mb20 mt20">2.文档示例</p>
         <div  class="markdown-body">
             <doc></doc>

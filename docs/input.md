@@ -10,7 +10,7 @@
 ```
 
 #### 类型       
-textarea除外  单独封装了一个组件
+textarea  radio  checked除外  单独封装了一个组件
 ```html  Python
 <s-input type="text"   width="100" height="30" placeholder="请输入111">输入框</s-input>
 <s-input type="password"   width="200" height="40" placeholder="请输入111">输入框</s-input>
