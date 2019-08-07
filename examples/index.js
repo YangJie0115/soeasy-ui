@@ -9,6 +9,7 @@ import Input from '../packages/input'
 import Textarea from '../packages/textarea'
 import Radio from '../packages/radio'
 import Checkbox from '../packages/checkbox'
+import Table from '../packages/table/index'
 import  "./assets/css/index.css"
 import  "./icon.css"
 import 'github-markdown-css';
@@ -23,6 +24,7 @@ const components = [
   Textarea,
   Radio,
   Checkbox,
+  Table,
 ]
 
 const install = function(Vue) {
@@ -46,6 +48,7 @@ export {
   Textarea,
   Radio,
   Checkbox,
+  Table,
 }
 
 export default {

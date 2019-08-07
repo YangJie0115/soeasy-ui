@@ -35,6 +35,10 @@ export const router =new Router({
           path: '/checkbox',
           component:resolve =>require(['../packages/checkbox/demo/checkbox.vue'],resolve),
         },
+        {
+          path: '/table',
+          component:resolve =>require(['../packages/table/demo/table.vue'],resolve),
+        },
         // 账号信息
         // {
         //   path:'/account',

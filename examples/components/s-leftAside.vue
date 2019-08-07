@@ -21,7 +21,7 @@
           <li class="f14" :class="{isActive:curPath=='DatePicker'}" @click="chooseLeft('datePicker')">DatePicker 日期选择器</li>
           <li class="f14" :class="{isActive:curPath=='DateTimePicker'}" @click="chooseLeft('dateTimePicker')">DateTimePicker 日期时间选择器</li>
           <li class="f14" :class="{isActive:curPath=='Rate'}" @click="chooseLeft('rate')">Rate 评分</li>
-          <li class="f14" :class="{isActive:curPath=='TTable'}" @click="chooseLeft('TTable')">TTable 表格</li>
+          <li class="f14" :class="{isActive:curPath=='table'}" @click="chooseLeft('table')">Table 表格</li>
           <li class="f14" :class="{isActive:curPath=='Tag'}" @click="chooseLeft('Tag')">Tag 标签</li>
           <li class="f14" :class="{isActive:curPath=='Pagination'}" @click="chooseLeft('Pagination')">Pagination 分页</li>
           <li class="f14" :class="{isActive:curPath=='Badge'}" @click="chooseLeft('Badge')">Badge 标记</li>
