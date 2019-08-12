@@ -10,9 +10,12 @@ import Textarea from '../packages/textarea'
 import Radio from '../packages/radio'
 import Checkbox from '../packages/checkbox'
 import Table from '../packages/table/index'
+import Select from '../packages/select/index'
+import Option from '../packages/select/index1'
 import  "./assets/css/index.css"
 import  "./icon.css"
 import 'github-markdown-css';
+
 
 Vue.config.productionTip = false
 // Vue.component("s-button", Button)
@@ -25,6 +28,8 @@ const components = [
   Radio,
   Checkbox,
   Table,
+  Select,
+  Option
 ]
 
 const install = function(Vue) {
@@ -33,6 +38,27 @@ const install = function(Vue) {
   })
 }
 
+Vue.prototype.dispatch=function(componentName, eventName, params) {
+  
+  var parent = this.$parent || this.$root;
+  console.log(this.$parent)
+  var name = parent.$options.componentName;
+  console.log(componentName, eventName, params)
+  console.log(parent,name)
+  //寻找父级，如果父级不是符合的组件名，则循环向上查找
+  while (parent && (!name || name !== componentName)) {
+    parent = parent.$parent;
+  
+    if (parent) {
+      name = parent.$options.componentName;
+    }
+  }
+  //找到符合组件名称的父级后，触发其事件。整体流程类似jQuery的closest方法
+  if (parent) {
+    parent.$emit.apply(parent, [eventName].concat(params));
+  }
+ }
+ 
 
 
 
@@ -49,6 +75,8 @@ export {
   Radio,
   Checkbox,
   Table,
+  Select,
+  Option
 }
 
 export default {

@@ -1,7 +1,7 @@
 <template>
     <div id="s-headers">
         <div class="cont">
-            <h2 class="lt f30">SOEASY</h2>
+            <h2 class="lt f30">SOEASY-UI</h2>
             <div class="rt f20">SOEASY</div>
         </div>
     </div>
@@ -20,7 +20,7 @@ export default {
   left: 0;
   right: 0;
   height: 70px;
-  border-bottom: 1px solid #f1f4f8;
+  border-bottom: 1px solid #cccccc;
   background: #fff;
   overflow: hidden;
   z-index: 100;

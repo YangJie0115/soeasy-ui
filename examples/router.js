@@ -39,6 +39,10 @@ export const router =new Router({
           path: '/table',
           component:resolve =>require(['../packages/table/demo/table.vue'],resolve),
         },
+        {
+          path: '/select',
+          component:resolve =>require(['../packages/select/demo/select.vue'],resolve),
+        },
         // 账号信息
         // {
         //   path:'/account',

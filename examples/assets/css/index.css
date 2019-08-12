@@ -382,3 +382,12 @@ a,img{
 .iconList .iconfont{
     font-size: 32px;
 }
+#particles-js{
+    /* background-image: url(../img/sky.871d198.jpg); */
+    /* background-size: cover; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

@@ -32,7 +32,7 @@ export default {
             sRadioGroup1:[
                 {label:'选项1',value:1,disabled:"true"},
                 {label:'选项2',value:2,disabled:"true"},
-                {label:'选项选项3',value:3},
+                {label:'选项选项3',value:3,disabled:"true"},
             ]
         }
     },
