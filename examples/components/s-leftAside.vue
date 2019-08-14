@@ -16,14 +16,11 @@
           <li class="f14" :class="{isActive:curPath=='radio'}" @click="chooseLeft('radio')">radio 单选框</li>
           <li class="f14" :class="{isActive:curPath=='Checkbox'}" @click="chooseLeft('checkbox')">Checkbox 多选框</li>
           <li class="f14" :class="{isActive:curPath=='select'}" @click="chooseLeft('select')">Select 选择器</li>
-          <li class="f14" :class="{isActive:curPath=='Cascader'}" @click="chooseLeft('cascader')">Cascader 级联选择器</li>
-          <li class="f14" :class="{isActive:curPath=='TimePicker'}" @click="chooseLeft('timePicker')">TimePicker 时间选择器</li>
-          <li class="f14" :class="{isActive:curPath=='DatePicker'}" @click="chooseLeft('datePicker')">DatePicker 日期选择器</li>
-          <li class="f14" :class="{isActive:curPath=='DateTimePicker'}" @click="chooseLeft('dateTimePicker')">DateTimePicker 日期时间选择器</li>
-          <li class="f14" :class="{isActive:curPath=='Rate'}" @click="chooseLeft('rate')">Rate 评分</li>
+          <li class="f14" :class="{isActive:curPath=='cascader'}" @click="chooseLeft('cascader')">Cascader 级联选择器</li>
+          <li class="f14" :class="{isActive:curPath=='DatePicker'}" @click="chooseLeft('datePicker')">DatePicker 时间选择器</li>
+           <li class=" f20 s-tit">常用组件</li>
           <li class="f14" :class="{isActive:curPath=='table'}" @click="chooseLeft('table')">Table 表格</li>
-          <li class="f14" :class="{isActive:curPath=='Tag'}" @click="chooseLeft('Tag')">Tag 标签</li>
-          <li class="f14" :class="{isActive:curPath=='Pagination'}" @click="chooseLeft('Pagination')">Pagination 分页</li>
+          <li class="f14" :class="{isActive:curPath=='pagination'}" @click="chooseLeft('Pagination')">Pagination 分页</li>
           <li class="f14" :class="{isActive:curPath=='Badge'}" @click="chooseLeft('Badge')">Badge 标记</li>
           <li class="f14" :class="{isActive:curPath=='Message'}" @click="chooseLeft('Message')">Message 消息提示</li>
           <li class="f14" :class="{isActive:curPath=='MessageBox'}" @click="chooseLeft('MessageBox')">MessageBox 弹框</li>

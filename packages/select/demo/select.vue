@@ -1,8 +1,8 @@
 <template>
     <div id="icon">
-        <p class=" f30 mb20">1.checked示例</p>
+        <p class=" f30 mb20">1.select 选择器示例</p>
         <p class="mb10"><strong>普通样式</strong> </p>
-        <s-select v-model="value" @change="changeOption">
+        <s-select v-model="value" @change="changeOption" placeholder="请选择数字">
             <s-option value="11" label="按时打算"></s-option>
             <s-option value="22"  label="2"></s-option>
             <s-option value="33" label="3" ></s-option>
@@ -11,7 +11,7 @@
             <s-option value="66" label="6"></s-option>
             <s-option value="00" label="0"></s-option>
         </s-select>
-        <s-select v-model="value1" >
+        <s-select v-model="value1"  placeholder="请选择">
             <s-option value="11" label="按时打算"></s-option>
             <s-option value="22"  label="2"></s-option>
             <s-option value="33" label="3" disabled></s-option>

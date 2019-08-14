@@ -391,3 +391,27 @@ a,img{
     width: 100%;
     height: 100%;
 }
+
+
+.s-pagination .s-select-box{
+     width: 100px !important; 
+ }
+ .s-pagination .s-select-box input{
+    height: 30px !important;
+    line-height: 30px; 
+}
+.s-pagination .icon-down1{
+    top: 8px !important;
+}
+.s-pagination .s-select-group{
+    margin:0 !important;
+}
+.s-pagination .s-select-down-box{
+    min-width: 100px !important
+}
+.s-pagination  .jiao{
+    left:44px !important
+}
+.s-pagination .s-select-down-box{
+    top: 26px !important
+}

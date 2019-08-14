@@ -49,6 +49,7 @@ export default {
             }else{
                 this.$parent.$emit('handleOptionClick',[this.label,this.value])
             }
+            this.$emit('click',[this.label,this.value])
              
         },
         handleOptionSelect(data){

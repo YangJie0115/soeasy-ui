@@ -1,7 +1,7 @@
 <template>
     <div class="s-select-group" style="">
         <div class="s-select-box" @click="sSelectFocus"  :class="{'is-focus':isFocus}" v-clickOutSide="handleCloseThis">
-            <input class="s-select"  type="text" readonly  v-model="model" :disabled="isDisabled" 
+            <input class="s-select"  type="text" readonly  v-model="model" :disabled="isDisabled"  :placeholder="placeholder"
                 :class="{'is-disabled-options':isDisabled}"
              >
             <i class="icon-down1 iconfont"></i>
@@ -34,6 +34,10 @@ export default {
              default:""
          },
          disabled:Boolean,
+         placeholder:{
+             type:String,
+             default:""
+         }
     },
     computed:{
         isDisabled(){
@@ -44,6 +48,7 @@ export default {
         value(newVal,oldVal){
             this.$children.forEach(item=>{
             if(newVal==item.value){
+                 this.model=item.label;
                 item.$emit('chooseOption',newVal)
             }
         })
@@ -84,6 +89,7 @@ export default {
         this.$on('handleOptionClick', this.handleOptionSelect);
         this.$children.forEach(item=>{
             if(this.value==item.value){
+                this.model=item.label;
                 item.$emit('chooseOption',this.value)
             }
         })

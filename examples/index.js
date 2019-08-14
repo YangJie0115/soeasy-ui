@@ -12,6 +12,8 @@ import Checkbox from '../packages/checkbox'
 import Table from '../packages/table/index'
 import Select from '../packages/select/index'
 import Option from '../packages/select/index1'
+import Cascader from '../packages/cascader'
+import Pagination from '../packages/pagination'
 import  "./assets/css/index.css"
 import  "./icon.css"
 import 'github-markdown-css';
@@ -29,7 +31,9 @@ const components = [
   Checkbox,
   Table,
   Select,
-  Option
+  Option,
+  Cascader,
+  Pagination
 ]
 
 const install = function(Vue) {
@@ -76,7 +80,9 @@ export {
   Checkbox,
   Table,
   Select,
-  Option
+  Option,
+  Cascader,
+  Pagination
 }
 
 export default {

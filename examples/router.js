@@ -43,6 +43,14 @@ export const router =new Router({
           path: '/select',
           component:resolve =>require(['../packages/select/demo/select.vue'],resolve),
         },
+        {
+          path: '/cascader',
+          component:resolve =>require(['../packages/cascader/demo/cascader.vue'],resolve),
+        },
+        {
+          path: '/pagination',
+          component:resolve =>require(['../packages/pagination/demo/pagination.vue'],resolve),
+        },
         // 账号信息
         // {
         //   path:'/account',

@@ -3,7 +3,7 @@
 #### 普通的
 
 ```html  Python
-<s-select v-model="value" @change="changeOption">
+<s-select v-model="value" @change="changeOption"   placeholder="请选择">
     <s-option value="11" label="按时打算"></s-option>
     <s-option value="22"  label="2"></s-option>
     <s-option value="33" label="3" ></s-option>
@@ -20,7 +20,7 @@
 #### 有禁用选项
 
 ```html  Python
-<s-select v-model="value1" @change="changeOption">
+<s-select v-model="value1" @change="changeOption"   placeholder="请选择">
     <s-option value="11" label="按时打算"></s-option>
     <s-option value="22"  label="2" disabled></s-option>
     <s-option value="33" label="3" ></s-option>
@@ -50,6 +50,7 @@
 | -------- | -----:| -----:  |-----:  | :----:  |
 | value|  |绑定的value值|   |    |
 | disabled |  Boolean  |禁用  |  true,false | false |
+| placeholder |  String  |提示语  |   |  |
 
 
 #### Props
