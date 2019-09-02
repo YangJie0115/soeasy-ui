@@ -14,6 +14,7 @@ import Select from '../packages/select/index'
 import Option from '../packages/select/index1'
 import Cascader from '../packages/cascader'
 import Pagination from '../packages/pagination'
+import Sign from '../packages/sign'
 import  "./assets/css/index.css"
 import  "./icon.css"
 import 'github-markdown-css';
@@ -33,7 +34,8 @@ const components = [
   Select,
   Option,
   Cascader,
-  Pagination
+  Pagination,
+  Sign
 ]
 
 const install = function(Vue) {
@@ -82,7 +84,8 @@ export {
   Select,
   Option,
   Cascader,
-  Pagination
+  Pagination,
+  Sign
 }
 
 export default {

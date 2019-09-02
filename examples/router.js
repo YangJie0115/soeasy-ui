@@ -51,6 +51,10 @@ export const router =new Router({
           path: '/pagination',
           component:resolve =>require(['../packages/pagination/demo/pagination.vue'],resolve),
         },
+        {
+          path: '/sign',
+          component:resolve =>require(['../packages/sign/demo/sign.vue'],resolve),
+        },
         // 账号信息
         // {
         //   path:'/account',

@@ -21,7 +21,7 @@
            <li class=" f20 s-tit">常用组件</li>
           <li class="f14" :class="{isActive:curPath=='table'}" @click="chooseLeft('table')">Table 表格</li>
           <li class="f14" :class="{isActive:curPath=='pagination'}" @click="chooseLeft('Pagination')">Pagination 分页</li>
-          <li class="f14" :class="{isActive:curPath=='Badge'}" @click="chooseLeft('Badge')">Badge 标记</li>
+          <li class="f14" :class="{isActive:curPath=='sign'}" @click="chooseLeft('sign')">sign 标记</li>
           <li class="f14" :class="{isActive:curPath=='Message'}" @click="chooseLeft('Message')">Message 消息提示</li>
           <li class="f14" :class="{isActive:curPath=='MessageBox'}" @click="chooseLeft('MessageBox')">MessageBox 弹框</li>
           <li class="f14" :class="{isActive:curPath=='NavMenu'}" @click="chooseLeft('NavMenu')">NavMenu 导航菜单</li>

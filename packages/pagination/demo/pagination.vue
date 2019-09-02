@@ -4,7 +4,7 @@
         <p class="mb10">返回的值 {{num}}</p>
         <s-pagination
             :total="103"
-            :size="20"
+            :size="10"
             :currentPage="1"
             :category="[10,20,30,5]"
             @handlePage="handlePage"

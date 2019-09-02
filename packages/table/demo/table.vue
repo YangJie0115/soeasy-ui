@@ -35,11 +35,11 @@ export default {
     data(){
         return {
             list:[
-                {name:"杨**",age:16,sex:"男",adress:"浙江神阿斯利康大家爱丽丝的骄傲临时搭建ask了"},
+                {name:"杨**",age:16,sex:"男",adress:"浙江神阿斯利康大家爱丽丝的骄傲临时搭建ask了1"},
                 {name:"张**",age:33,sex:"男",adress:"阿三大苏打实打实大洛杉矶肯德基爱丽丝的"},
                 {name:"翰**",age:45,sex:"女",adress:"讨论客人今天了客人就退了就特开了"},
                 {name:"李**",age:66,sex:"男",adress:"从v这些邻居快节奏旋律节奏旋律"},
-                {name:"德**",age:55,sex:"女",adress:"和老公开发和两个房间快乐和开发计划落空"},
+                {name:"德**",age:55,sex:"女",adress:"和老公开发和两个房间快乐和开发计划落空2"},
             ],
             tHead:[
                 {key:"序号",name:"#",width:"50px"},
