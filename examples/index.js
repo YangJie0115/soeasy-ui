@@ -15,6 +15,7 @@ import Option from '../packages/select/index1'
 import Cascader from '../packages/cascader'
 import Pagination from '../packages/pagination'
 import Sign from '../packages/sign'
+import Message from '../packages/message'
 import  "./assets/css/index.css"
 import  "./icon.css"
 import 'github-markdown-css';
@@ -35,7 +36,7 @@ const components = [
   Option,
   Cascader,
   Pagination,
-  Sign
+  Sign,
 ]
 
 const install = function(Vue) {
@@ -43,14 +44,12 @@ const install = function(Vue) {
     Vue.use(component)
   })
 }
+Vue.prototype.$message = Message;
 
 Vue.prototype.dispatch=function(componentName, eventName, params) {
   
   var parent = this.$parent || this.$root;
-  console.log(this.$parent)
   var name = parent.$options.componentName;
-  console.log(componentName, eventName, params)
-  console.log(parent,name)
   //寻找父级，如果父级不是符合的组件名，则循环向上查找
   while (parent && (!name || name !== componentName)) {
     parent = parent.$parent;
@@ -85,7 +84,7 @@ export {
   Option,
   Cascader,
   Pagination,
-  Sign
+  Sign,
 }
 
 export default {
