@@ -59,6 +59,10 @@ export const router =new Router({
           path: '/message',
           component:resolve =>require(['../packages/message/demo/message.vue'],resolve),
         },
+        {
+          path: '/dialog',
+          component:resolve =>require(['../packages/dialog/demo/dialog.vue'],resolve),
+        },
         // 账号信息
         // {
         //   path:'/account',

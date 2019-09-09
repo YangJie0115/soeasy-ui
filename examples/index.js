@@ -16,6 +16,7 @@ import Cascader from '../packages/cascader'
 import Pagination from '../packages/pagination'
 import Sign from '../packages/sign'
 import Message from '../packages/message'
+import Dialog from '../packages/dialog'
 import  "./assets/css/index.css"
 import  "./icon.css"
 import 'github-markdown-css';
@@ -37,6 +38,7 @@ const components = [
   Cascader,
   Pagination,
   Sign,
+  Dialog,
 ]
 
 const install = function(Vue) {
@@ -85,6 +87,7 @@ export {
   Cascader,
   Pagination,
   Sign,
+  Dialog,
 }
 
 export default {

@@ -23,7 +23,7 @@
           <li class="f14" :class="{isActive:curPath=='pagination'}" @click="chooseLeft('Pagination')">Pagination 分页</li>
           <li class="f14" :class="{isActive:curPath=='sign'}" @click="chooseLeft('sign')">sign 标记</li>
           <li class="f14" :class="{isActive:curPath=='message'}" @click="chooseLeft('message')">Message 消息提示</li>
-          <li class="f14" :class="{isActive:curPath=='MessageBox'}" @click="chooseLeft('MessageBox')">MessageBox 弹框</li>
+          <li class="f14" :class="{isActive:curPath=='dialog'}" @click="chooseLeft('dialog')">Dialog 弹框</li>
           <li class="f14" :class="{isActive:curPath=='NavMenu'}" @click="chooseLeft('NavMenu')">NavMenu 导航菜单</li>
           <li class="f14" :class="{isActive:curPath=='Breadcrumb'}" @click="chooseLeft('Breadcrumb')">Breadcrumb 面包屑</li>
           <li class="f14" :class="{isActive:curPath=='Dropdown'}" @click="chooseLeft('Dropdown')">Dropdown 下拉菜单</li>
