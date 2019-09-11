@@ -19,7 +19,7 @@
           <li class="f14" :class="{isActive:curPath=='cascader'}" @click="chooseLeft('cascader')">Cascader 级联选择器</li>
           <li class="f14" :class="{isActive:curPath=='DatePicker'}" @click="chooseLeft('datePicker')">DatePicker 时间选择器</li>
            <li class=" f20 s-tit">常用组件</li>
-          <li class="f14" :class="{isActive:curPath=='table'}" @click="chooseLeft('table')">Table 表格</li>
+          <li class="f14" :class="{isActive:curPath=='table'}"  @click="chooseLeft('table')">Table 表格</li>
           <li class="f14" :class="{isActive:curPath=='pagination'}" @click="chooseLeft('Pagination')">Pagination 分页</li>
           <li class="f14" :class="{isActive:curPath=='sign'}" @click="chooseLeft('sign')">sign 标记</li>
           <li class="f14" :class="{isActive:curPath=='message'}" @click="chooseLeft('message')">Message 消息提示</li>
