@@ -1,8 +1,8 @@
 <template>
     <div id="s-headers">
         <div class="cont">
+            <s-icon icon="icon-logo" class="lt " style="color:#2c3e50;margin:13px 10px 0 0;font-size:38px"></s-icon>
             <h2 class="lt f30">SOEASY-UI</h2>
-            <div class="rt f20">SOEASY</div>
         </div>
     </div>
 </template>
