@@ -1,6 +1,6 @@
 <template>
   <div class="demo-button">
-    <p class=" f30 mb20">1.按钮示例</p>
+    <p class=" f30 mb20">1.sign 标记示例</p>
     <p class="mb10">提供了一套常用的按钮集合。</p>
     <s-sign border>标签1</s-sign>
     <s-sign  num="11" border>标签2</s-sign>

@@ -2,12 +2,12 @@
     <div id="s-leftAside">
       <ul>
           <li class=" f20 s-tit">开发指南</li>
-          <li class="f14">简单说明</li>
-          <li class="f14">更新日志</li>
-          <li class="f14">快速上手</li>
+          <li class="f14"  :class="{isActive:curPath=='introduce'}" @click="chooseLeft('introduce')">简单说明</li>
+          <!-- <li class="f14">更新日志</li> -->
+          <li class="f14" :class="{isActive:curPath=='user'}" @click="chooseLeft('user')">使用说明</li>
       </ul>
 
-      <ul>
+      <ul style="padding-bottom:50px">
           <li class=" f20 s-tit">基本组件</li>
           <li class="f14" :class="{isActive:curPath=='icon'}" @click="chooseLeft('icon')">icon 图标</li>
           <li class="f14" :class="{isActive:curPath=='button'}" @click="chooseLeft('button')">button 按钮</li>
@@ -17,19 +17,20 @@
           <li class="f14" :class="{isActive:curPath=='Checkbox'}" @click="chooseLeft('checkbox')">Checkbox 多选框</li>
           <li class="f14" :class="{isActive:curPath=='select'}" @click="chooseLeft('select')">Select 选择器</li>
           <li class="f14" :class="{isActive:curPath=='cascader'}" @click="chooseLeft('cascader')">Cascader 级联选择器</li>
-          <li class="f14" :class="{isActive:curPath=='DatePicker'}" @click="chooseLeft('datePicker')">DatePicker 时间选择器</li>
+          <!-- <li class="f14" :class="{isActive:curPath=='DatePicker'}" @click="chooseLeft('datePicker')">DatePicker 时间选择器</li> -->
            <li class=" f20 s-tit">常用组件</li>
           <li class="f14" :class="{isActive:curPath=='table'}"  @click="chooseLeft('table')">Table 表格</li>
           <li class="f14" :class="{isActive:curPath=='pagination'}" @click="chooseLeft('Pagination')">Pagination 分页</li>
           <li class="f14" :class="{isActive:curPath=='sign'}" @click="chooseLeft('sign')">sign 标记</li>
           <li class="f14" :class="{isActive:curPath=='message'}" @click="chooseLeft('message')">Message 消息提示</li>
           <li class="f14" :class="{isActive:curPath=='dialog'}" @click="chooseLeft('dialog')">Dialog 弹框</li>
-          <li class="f14" :class="{isActive:curPath=='NavMenu'}" @click="chooseLeft('NavMenu')">NavMenu 导航菜单</li>
-          <li class="f14" :class="{isActive:curPath=='Breadcrumb'}" @click="chooseLeft('Breadcrumb')">Breadcrumb 面包屑</li>
-          <li class="f14" :class="{isActive:curPath=='Dropdown'}" @click="chooseLeft('Dropdown')">Dropdown 下拉菜单</li>
-          <li class="f14" :class="{isActive:curPath=='Carousel'}" @click="chooseLeft('Carousel')">Carousel 走马灯</li>
-          <li class="f14" :class="{isActive:curPath=='Collapse'}" @click="chooseLeft('Collapse')">Collapse 折叠面板</li>
-          <li class="f14" :class="{isActive:curPath=='Upload'}" @click="chooseLeft('Upload')">Upload 上传</li>
+          <li class="f14" :class="{isActive:curPath=='navMenu'}" @click="chooseLeft('navMenu')">NavMenu 横向导航菜单</li>
+          <!-- <li class="f14" :class="{isActive:curPath=='navMenu'}" @click="chooseLeft('navMenu')">NavMenu 导航菜单</li> -->
+          <li class="f14" :class="{isActive:curPath=='breadcrumb'}" @click="chooseLeft('breadcrumb')">Breadcrumb 面包屑</li>
+          <!-- <li class="f14" :class="{isActive:curPath=='Dropdown'}" @click="chooseLeft('Dropdown')">Dropdown 下拉菜单</li> -->
+          <!-- <li class="f14" :class="{isActive:curPath=='Carousel'}" @click="chooseLeft('Carousel')">Carousel 走马灯</li> -->
+          <!-- <li class="f14" :class="{isActive:curPath=='Collapse'}" @click="chooseLeft('Collapse')">Collapse 折叠面板</li> -->
+          <!-- <li class="f14" :class="{isActive:curPath=='Upload'}" @click="chooseLeft('Upload')">Upload 上传</li> -->
       </ul>
 
       

@@ -7,9 +7,6 @@
             <s-option value="22"  label="2"></s-option>
             <s-option value="33" label="3" ></s-option>
             <s-option value="44" label="4"></s-option>
-            <s-option value="55" label="5"></s-option>
-            <s-option value="66" label="6"></s-option>
-            <s-option value="00" label="0"></s-option>
         </s-select>
         <s-select v-model="value1"  placeholder="请选择">
             <s-option value="11" label="按时打算"></s-option>

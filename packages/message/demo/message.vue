@@ -1,6 +1,6 @@
 <template>
     <div id="">
-        <p class=" f30 mb20">1.输入框示例</p>
+        <p class=" f30 mb20">1.message 提示框示例</p>
         <p class="mb10"><strong>大小不一的input</strong> </p>
         <s-button type="" @click="open" hollow> 默认</s-button>
         <s-button type="success" @click="open1" hollow>成功</s-button>

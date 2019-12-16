@@ -1,7 +1,7 @@
 <template>
    
     <div id="">
-        <p class=" f30 mb20">1.输入框示例</p>
+        <p class=" f30 mb20">1.dialog 弹出遮罩示例</p>
         <p class="mb10"><strong>大小不一的input</strong> </p>
         <s-button type="primary" @click="dialogTableVisible=true">这是一个dialog</s-button>
         <s-dialog 

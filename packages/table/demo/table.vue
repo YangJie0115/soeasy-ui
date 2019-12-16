@@ -1,6 +1,6 @@
 <template>
     <div id="icon">
-        <p class=" f30 mb20">1.textarea示例</p>
+        <p class=" f30 mb20">1.table示例</p>
         <p class="mb10"><strong>表格1普通样式</strong> </p>
         <s-table :list="list" :tHead="tHead" ></s-table>
         <p class="mb10"><strong>表格2有Border  有操作</strong> </p>

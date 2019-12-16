@@ -8,7 +8,17 @@ export const router =new Router({
           // 默认登录
         {
           path: '/',
-          redirect: '/icon'
+          redirect: '/user'
+        },
+        // 介绍
+        {
+          path: '/introduce',
+          component:resolve =>require(['../packages/introduce.vue'],resolve),
+        },
+        // 使用说明
+        {
+          path: '/user',
+          component:resolve =>require(['../packages/user.vue'],resolve),
         },
         // icon
         {
@@ -63,6 +73,19 @@ export const router =new Router({
           path: '/dialog',
           component:resolve =>require(['../packages/dialog/demo/dialog.vue'],resolve),
         },
+        {
+          path: '/navMenu',
+          component:resolve =>require(['../packages/navMenu/demo/navMenu.vue'],resolve),
+        },
+        {
+          path: '/navMenu1',
+          component:resolve =>require(['../packages/navMenu/demo/navMenu.vue'],resolve),
+        },
+        {
+          path: '/breadcrumb',
+          component:resolve =>require(['../packages/breadcrumb/demo/breadcrumb.vue'],resolve),
+        },
+        
         // 账号信息
         // {
         //   path:'/account',
